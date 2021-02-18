@@ -1,0 +1,3 @@
+#
+Fileurl<-"https://databank.worldbank.org/data/download/GDP.csv"
+download.file(dat,destfile ="./Inam R/GDPData.csv",method ="libcurl")
