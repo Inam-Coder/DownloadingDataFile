@@ -1,3 +1,8 @@
-#
-Fileurl<-"https://databank.worldbank.org/data/download/GDP.csv"
-download.file(dat,destfile ="./Inam R/GDPData.csv",method ="libcurl")
+
+FileUrl<-"http://databank.worldbank.org/data/download/GDP.csv"
+download.file(FileUrl,destfile ="../DownloadingDataFile/GDPData1.csv")
+list.files("../DownloadingDataFile/GDPData1.csv")
+datagdp<-read.csv("../DownloadingDataFile/GDPData1.csv")
+str(datagdp)
+datedownloaded<-date()
+datedownloaded
